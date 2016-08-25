@@ -3387,6 +3387,11 @@
       "from": "react-addons-pure-render-mixin@15.0.2",
       "resolved": "./node_shrinkwrap/react-addons-pure-render-mixin-15.0.2.tar"
     },
+    "react-addons-test-utils": {
+      "version": "15.2.1",
+      "from": "react-addons-test-utils@15.2.1",
+      "resolved": "./node_shrinkwrap/react-addons-test-utils-15.2.1.tar"
+    },
     "react-clone-referenced-element": {
       "version": "1.0.1",
       "from": "react-clone-referenced-element@>=1.0.1 <2.0.0",
@@ -3460,6 +3465,11 @@
           "resolved": "./node_shrinkwrap/lodash-4.15.0.tar"
         }
       }
+    },
+    "react-shallow-testutils": {
+      "version": "2.0.0",
+      "from": "react-shallow-testutils@latest",
+      "resolved": "./node_shrinkwrap/react-shallow-testutils-2.0.0.tar"
     },
     "react-static-container": {
       "version": "1.0.1",
