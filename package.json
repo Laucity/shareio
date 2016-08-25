@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "react": "15.2.1",
-    "react-native": "0.31.0"
+    "react-native": "0.31.0",
+    "react-native-material-kit": "^0.3.2"
   },
   "devDependencies": {
     "babel-jest": "^14.1.0",
