@@ -1,0 +1,52 @@
+[
+  {
+    "profile_img_uri": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAM7AAAAJGNiMjZkMjkzLTEzMjktNDNkZS04OGI2LTdkNTFhMjQ0Y2YyOA.jpg",
+    "title": "Basketball",
+    "city": "Berkeley",
+    "state": "CA",
+    "rating": "5",
+    "price": "400",
+    "duration": "hr",
+    "item_img_uri": "https://az616578.vo.msecnd.net/files/2016/04/12/635960876832893706181535308_basketball.jpg"
+  },
+  {
+    "profile_img_uri": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAUPAAAAJDdmNTQxYjQ4LThmZTktNDA1Mi04MmQ5LTQzYWM2ZDJiMmJlMg.jpg",
+    "title": "Guitars fresh out of the oven",
+    "city": "Folsom",
+    "state": "CA",
+    "rating": "3.5",
+    "price": "1000",
+    "duration": "day",
+    "item_img_uri": "https://www.themusiczoo.com/images/3-08-12/1280_Taylor_814ce_Tobacco_Sunburst_1102012085_e.jpg"
+  },
+  {
+    "profile_img_uri": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAXnAAAAJDg3YjZjNzI2LWMyODAtNDY3Yy1hNWMxLThjY2RhOWRlMDgyNw.jpg",
+    "title": "Your Mother",
+    "city": "Collinsville",
+    "state": "VA",
+    "rating": "0",
+    "price": "0",
+    "duration": "wk",
+    "item_img_uri": "https://az616578.vo.msecnd.net/files/2016/04/12/635960876832893706181535308_basketball.jpg"
+  },
+  {
+    "profile_img_uri": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAdZAAAAJDE1NWY1ODUxLWQ5OTItNDlmNS1hZDhkLTE4YWI5YmJiZmI5ZA.jpg",
+    "title": "The Dankest Methamphetamines",
+    "city": "Goleta",
+    "state": "CA",
+    "rating": "4.5",
+    "price": "1",
+    "duration": "mo",
+    "item_img_uri": "https://s3-us-west-1.amazonaws.com/ov-file-archive/piece/23/3/735323.0.meth.jpg"
+  },
+  {
+    "profile_img_uri": "https://scontent-sjc.xx.fbcdn.net/t31.0-8/11251379_901502783229368_3279807907477410988_o.jpg",
+    "title": "Chase Smith",
+    "city": "Portland",
+    "state": "OR",
+    "rating": "0",
+    "price": "1",
+    "duration": "yr",
+    "item_img_uri": "https://static1.businessinsider.com/image/56d75be06e97c621048bb0b5-480/donald-trump.jpg"
+  }
+]
