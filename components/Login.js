@@ -7,7 +7,7 @@ import {
   View
 } from 'react-native';
 
-import { MKButton } from 'react-native-material-kit';
+import { Actions } from 'react-native-router-flux';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import Color from 'shareio/lib/Color';
@@ -17,7 +17,7 @@ export const TOS = 'By logging in, you are agreeing to our Terms of Service, Pri
 export default class Login extends Component {
 
   _login() {
-    Alert.alert('Login Error', 'We have no backend yet.');
+    Actions.feed();
   }
 
   render() {
@@ -28,7 +28,8 @@ export default class Login extends Component {
             <Text style={[styles.logo, styles.text]}>{'<S>'}</Text>
             <Text ref={'welcome'} style={[styles.fontSize_24, styles.text]}>Welcome to share.io</Text>
           </View>
-          <MKButton
+          <TouchableHighlight
+            underlayColor={Color.LIGHTER_GREEN}
             ref={'login'}
             onPress={() => this._login()}
             style={styles.loginButton}
@@ -37,7 +38,7 @@ export default class Login extends Component {
               <Icon name='facebook-official' color='white' size={24} />
               <Text style={[styles.loginText, styles.text]}>Login with Facebook</Text>
             </View>
-          </MKButton>
+          </TouchableHighlight>
         </View>
         <View style={styles.termsOfService}>
           <Text ref={'tos'} style={[styles.fontSize_12, styles.text]}>{TOS}</Text>
