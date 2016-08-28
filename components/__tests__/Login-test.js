@@ -1,14 +1,15 @@
 import React from 'react';
-import { Alert } from 'react-native';
 
 import TestUtils from 'react-addons-test-utils';
 import * as ShallowTestUtils from 'react-shallow-testutils';
 
+import { Actions } from 'react-native-router-flux';
+
 import Login, { TOS } from '../Login';
 
-jest.mock('react-native-material-kit', () => {
+jest.mock('react-native-router-flux', () => {
   return {
-    MKButton: jest.fn()
+    Actions: jest.fn()
   }
 });
 
@@ -22,11 +23,10 @@ describe('Login', () => {
   });
 
   it('calls an alert when the login button is pressed', () => {
-    Alert.alert = jest.fn();
+    Actions.feed = jest.fn();
 
     ShallowTestUtils.findWithRef(output, 'login').props.onPress();
-    expect(Alert.alert).toBeCalled();
-    expect(Alert.alert.mock.calls[0][0]).toEqual('Login Error');
+    expect(Actions.feed).toBeCalled();
   });
 
   it('contains the correct Terms of Service text', () => {
