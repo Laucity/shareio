@@ -37,7 +37,7 @@ export default class SideBarInfo extends Component {
 
 const styles = StyleSheet.create({
   info: {
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    backgroundColor: Color.BARELY_BLACK,
     position: 'absolute',
     bottom: 0,
     left: 0,
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   infoContainer: {
     borderTopWidth: 2,
-    borderTopColor: '#A9A9A9',
+    borderTopColor: Color.BORDER_GRAY,
     alignItems: 'center',
     margin: 12,
     paddingTop: 12,

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
   Platform,
-  StyleSheet
 } from 'react-native';
 import { Scene, Router } from 'react-native-router-flux';
 
@@ -10,6 +9,7 @@ import Feed from './Feed';
 import Drawer from './Drawer';
 
 export default class App extends Component {
+  
   render() {
     return (
       <Router hideNavBar={true}>

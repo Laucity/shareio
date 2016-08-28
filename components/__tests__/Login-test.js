@@ -22,7 +22,7 @@ describe('Login', () => {
     output = renderer.getRenderOutput();
   });
 
-  it('calls an alert when the login button is pressed', () => {
+  it('when the login button is pressed, it goes to the next page', () => {
     Actions.drawer = jest.fn();
 
     ShallowTestUtils.findWithRef(output, 'login').props.onPress();
