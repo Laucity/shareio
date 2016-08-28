@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  Alert,
   StyleSheet,
   Text,
   TouchableHighlight,
@@ -17,7 +16,7 @@ export const TOS = 'By logging in, you are agreeing to our Terms of Service, Pri
 export default class Login extends Component {
 
   _login() {
-    Actions.feed();
+    Actions.drawer();
   }
 
   render() {
