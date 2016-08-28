@@ -3407,6 +3407,11 @@
       "from": "react-native@latest",
       "resolved": "./node_shrinkwrap/react-native-0.31.0.tar"
     },
+    "react-native-drawer": {
+      "version": "2.3.0",
+      "from": "react-native-drawer@latest",
+      "resolved": "./node_shrinkwrap/react-native-drawer-2.3.0.tar"
+    },
     "react-native-experimental-navigation": {
       "version": "0.26.9",
       "from": "react-native-experimental-navigation@>=0.26.0 <0.27.0",
@@ -4126,6 +4131,11 @@
       "version": "0.4.3",
       "from": "tunnel-agent@>=0.4.0 <0.5.0",
       "resolved": "./node_shrinkwrap/tunnel-agent-0.4.3.tar"
+    },
+    "tween-functions": {
+      "version": "1.2.0",
+      "from": "tween-functions@>=1.0.1 <2.0.0",
+      "resolved": "./node_shrinkwrap/tween-functions-1.2.0.tar"
     },
     "tweetnacl": {
       "version": "0.13.3",

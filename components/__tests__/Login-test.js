@@ -22,11 +22,11 @@ describe('Login', () => {
     output = renderer.getRenderOutput();
   });
 
-  it('calls an alert when the login button is pressed', () => {
-    Actions.feed = jest.fn();
+  it('when the login button is pressed, it goes to the next page', () => {
+    Actions.drawer = jest.fn();
 
     ShallowTestUtils.findWithRef(output, 'login').props.onPress();
-    expect(Actions.feed).toBeCalled();
+    expect(Actions.drawer).toBeCalled();
   });
 
   it('contains the correct Terms of Service text', () => {

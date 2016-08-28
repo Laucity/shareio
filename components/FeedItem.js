@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
   },
   price: {
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    backgroundColor: Color.ALMOST_BLACK,
     bottom: 20,
     height: 30,
     justifyContent: 'center',
