@@ -9,5 +9,8 @@ engines:
     config:
       languages:
       - javascript
+ratings:
+   paths:
+   - "components/*"
 exclude_paths:
 - "**/__tests__/"
