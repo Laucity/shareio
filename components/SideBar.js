@@ -15,14 +15,14 @@ export default class SideBar extends Component {
     return (
       <View style={styles.container}>
         <Image 
-          source={ require('shareio/assets/city2.jpg') }
+          source={ require('shareio/assets/house_blurred.jpg') }
           style={styles.backgroundImage}
-          resizeMode={'contain'}
+          resizeMode={'cover'}
         />
 
         <SideBarInfo 
-          profile_img_uri={"https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAM7AAAAJGNiMjZkMjkzLTEzMjktNDNkZS04OGI2LTdkNTFhMjQ0Y2YyOA.jpg"}
-          name={"Barack Obama"}
+          profile_img_uri={this.props.url}
+          name={this.props.name}
           location={"Washington, D.C."}
         />
       </View>

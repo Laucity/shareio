@@ -3,15 +3,18 @@ import React from 'react';
 import TestUtils from 'react-addons-test-utils';
 import * as ShallowTestUtils from 'react-shallow-testutils';
 
-import { Actions } from 'react-native-router-flux';
+import { Actions, DefaultRenderer } from 'react-native-router-flux';
 
 import Login, { TOS } from '../Login';
 
 jest.mock('react-native-router-flux', () => {
   return {
-    Actions: jest.fn()
+    Actions: jest.fn(),
+    DefaultRenderer: jest.fn()
   }
 });
+
+jest.mock('../FBLogin', () => jest.fn());
 
 describe('Login', () => {
   let output;
@@ -22,13 +25,6 @@ describe('Login', () => {
     output = renderer.getRenderOutput();
   });
 
-  it('when the login button is pressed, it goes to the next page', () => {
-    Actions.drawer = jest.fn();
-
-    ShallowTestUtils.findWithRef(output, 'login').props.onPress();
-    expect(Actions.drawer).toBeCalled();
-  });
-
   it('contains the correct Terms of Service text', () => {
     let tosText = ShallowTestUtils.findWithRef(output, 'tos').props.children;
     expect(tosText).toEqual(TOS);
@@ -36,7 +32,7 @@ describe('Login', () => {
 
   it('contains the correct welcome text', () => {
     let welcomeText = ShallowTestUtils.findWithRef(output, 'welcome').props.children;
-    expect(welcomeText).toEqual('Welcome to share.io');
+    expect(welcomeText).toEqual('KwikShare');
   });
 
 });

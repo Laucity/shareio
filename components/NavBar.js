@@ -13,7 +13,7 @@ import Color from 'shareio/lib/Color';
 export default class NavBar extends Component {
 
   _toggleSideBar() {
-    Actions.refresh({ key: 'drawer', open: value => !value });
+    Actions.refresh({ key: 'drawer', open: (value) => !value });
   }
 
   render() {
@@ -26,7 +26,7 @@ export default class NavBar extends Component {
           size={25}
           color={Color.WHITE}
         />
-        <Text style={styles.logo}>S</Text>
+        <Text style={styles.logo}>K</Text>
         <Icon name={'search'} size={22} color={Color.WHITE} />
       </View>
     );
