@@ -18,7 +18,8 @@ import Color from 'shareio/lib/Color';
 export default class SideBarInfo extends Component {
 
   goHome() {
-
+    Actions.refresh({ key: 'drawer', open: (value) => !value });
+    Actions.feed();
   }
 
   goPost() {
