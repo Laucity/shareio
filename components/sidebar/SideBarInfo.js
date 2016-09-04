@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     margin: 12,
     paddingTop: 12,
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
   personImage: {
     borderRadius: 20,

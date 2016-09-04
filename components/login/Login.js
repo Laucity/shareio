@@ -54,22 +54,6 @@ const styles = StyleSheet.create({
     fontSize: 50,
     marginBottom: 10
   },
-  loginButton: {
-    alignSelf: 'center',
-    backgroundColor: Color.LIGHT_GREEN,
-    borderRadius: 5,
-    padding: 10,
-    paddingLeft: 20,
-    paddingRight: 20
-  },
-  loginContents: {
-    alignItems: 'center',
-    flexDirection: 'row'
-  },
-  loginText: {
-    fontSize: 16,
-    marginLeft: 10
-  },
   termsOfService: {
     flex: 1,
     justifyContent: 'flex-end',

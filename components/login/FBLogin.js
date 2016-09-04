@@ -4,8 +4,8 @@ import {
   Alert,
   StyleSheet,
   Text,
-  View,
   TouchableHighlight,
+  View
 } from 'react-native';
 
 import { FBLoginManager } from 'react-native-facebook-login';

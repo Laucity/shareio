@@ -14,7 +14,7 @@ export default class extends Component {
     this.state = {
       open: false
     };
-  };
+  }
 
   componentWillReceiveProps(nextProps) {
     this.setState({ open: nextProps.open });
