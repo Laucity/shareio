@@ -9,7 +9,7 @@ import {
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { FBLoginManager } from 'react-native-facebook-login';
-import { Actions, ActionConst } from 'react-native-router-flux';
+import { Actions } from 'react-native-router-flux';
 
 import Option from './Option';
 
@@ -18,8 +18,7 @@ import Color from 'shareio/lib/Color';
 export default class SideBarInfo extends Component {
 
   goHome() {
-    Actions.refresh({ key: 'drawer', open: (value) => !value });
-    Actions.feed();
+    Actions.refresh({ key: 'feed', open: false });
   }
 
   goPost() {
@@ -44,7 +43,7 @@ export default class SideBarInfo extends Component {
   _logout() {
     FBLoginManager.logout(function(error, data) {
       if (!error) {
-        Actions.login({ type: ActionConst.RESET });
+        Actions.login({ type: 'reset' });
       } else {
         console.log(error);
         setTimeout(() => Alert.alert('Error Logging Out', 'Please try again.'), 20);

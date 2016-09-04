@@ -18,7 +18,7 @@ describe('Login', () => {
 
   beforeEach(() => {
     let renderer = TestUtils.createRenderer();
-    renderer.render(<NavBar />);
+    renderer.render(<NavBar id={'feed'}/>);
     output = renderer.getRenderOutput();
   });
 
@@ -27,7 +27,7 @@ describe('Login', () => {
 
     ShallowTestUtils.findWithRef(output, 'menu').props.onPress();
     expect(Actions.refresh).toBeCalled();
-    expect(Actions.refresh.mock.calls[0][0].key).toBe('drawer');
+    expect(Actions.refresh.mock.calls[0][0].key).toBe('feed');
   });
 
 });

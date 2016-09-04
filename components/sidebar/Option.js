@@ -24,11 +24,11 @@ export default class Option extends Component {
         <View style={styles.contentContainer}>
           <Icon
             name={this.props.icon}
-            size={25}
             color={Color.WHITE}
+            size={25}
+            style={{height: 25, width: 25}}
           />
           <Text style={styles.logo}>{this.props.text}</Text>
-          <View></View>
         </View>
       </TouchableHighlight>
     );
@@ -44,16 +44,15 @@ const styles = StyleSheet.create({
     borderBottomColor: Color.BORDER_GRAY,
     flexDirection: 'row',
     flex: 1,
-    paddingTop: 18,
-    paddingBottom: 18,
-    paddingLeft: 20,
-    paddingRight: 20,
-    justifyContent: 'space-between',
-    alignItems: 'center'
+    paddingTop: 14,
+    paddingBottom: 14,
+    paddingLeft: 10,
+    paddingRight: 20
   },
   logo: {
     color: Color.WHITE,
     fontSize: 20,
-    textAlign: 'center'
+    paddingLeft: 20,
+    textAlign: 'left'
   }
 });

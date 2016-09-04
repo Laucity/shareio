@@ -13,7 +13,7 @@ import Color from 'shareio/lib/Color';
 export default class NavBar extends Component {
 
   _toggleSideBar() {
-    Actions.refresh({ key: 'drawer', open: (value) => !value });
+    Actions.refresh({ key: this.props.id , open: !this.props.open });
   }
 
   render() {

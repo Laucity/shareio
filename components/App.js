@@ -7,10 +7,10 @@ import {
 
 import { Scene, Router } from 'react-native-router-flux';
 
-import Login from './Login';
-import Feed from './Feed';
-import Drawer from './Drawer';
-import LoadingScreen from './LoadingScreen';
+import Login from './login/Login';
+import Feed from './feed/Feed';
+import Item from './feed/Item';
+import LoadingScreen from './login/LoadingScreen';
 
 import Color from 'shareio/lib/Color';
 
@@ -30,9 +30,8 @@ export default class App extends Component {
         <Scene style={styles.mainApp} key="root">
           <Scene key="loadingScreen" status={'initial'} component={LoadingScreen} initial={true} panHandlers={null}/>
           <Scene key="login" component={Login} panHandlers={null} type={'replace'} />
-          <Scene key="drawer" component={Drawer} open={false} type={'replace'}>
-            <Scene key="feed" component={Feed} type={'replace'} />
-          </Scene>
+          <Scene key="feed" component={Feed} type={'reset'} />
+          <Scene key="item" component={Item} />
         </Scene>
       </Router>
     );

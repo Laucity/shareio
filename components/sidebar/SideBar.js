@@ -24,6 +24,7 @@ export default class SideBar extends Component {
           profile_img_uri={this.props.url}
           name={this.props.name}
           location={"Washington, D.C."}
+          id={this.props.id}
         />
       </View>
     );

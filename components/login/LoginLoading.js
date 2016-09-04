@@ -44,7 +44,7 @@ export default class LoginLoading extends React.Component {
         Alert.alert('Error Logging In', 'Please try again.');
         Actions.login();
       } else {
-        Actions.drawer({
+        Actions.feed({
           data: this.props.data,
           photo,
           info,

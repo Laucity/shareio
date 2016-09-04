@@ -47,7 +47,7 @@ export default class InitialLoading extends React.Component {
     if (!photo || !info) {
       Actions.login();
     } else {
-      Actions.drawer({
+      Actions.feed({
         data,
         photo,
         info,

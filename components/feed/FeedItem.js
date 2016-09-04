@@ -8,6 +8,8 @@ import {
   View
 } from 'react-native';
 
+import { Actions } from 'react-native-router-flux';
+
 import Color from 'shareio/lib/Color';
 
 const { height, width } = Dimensions.get('window');
@@ -20,8 +22,16 @@ export default class FeedItem extends Component {
     let ratingsString = 'Rating: ' + this.props.rating;
     return (
       <TouchableHighlight
+        ref={'feedItem'}
         underlayColor={Color.LIGHTER_GREEN}
-        onPress={() => {}}
+        onPress={() => { Actions.item({
+          priceString,
+          cityString,
+          ratingsString,
+          title: this.props.title,
+          item_img_uri: this.props.item_img_uri,
+          profile_img_uri: this.props.profile_img_uri
+        }) }}
         style={styles.container}
       >
         <View>

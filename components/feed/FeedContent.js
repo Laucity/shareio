@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 
 import FeedItem from './FeedItem';
-import NavBar from './NavBar';
+import NavBar from 'shareio/components/navbar/NavBar';
 
 import Color from 'shareio/lib/Color';
 
@@ -34,7 +34,7 @@ export default class Feed extends Component {
   render() {
     return (
       <View style={{flex: 1}}>
-        <NavBar />
+        <NavBar id={'feed'} />
         <ListView
           onScroll={this._onScroll.bind(this)}
           dataSource={this.state.dataSource}

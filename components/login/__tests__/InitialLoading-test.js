@@ -33,7 +33,7 @@ describe('InitialLoading', () => {
   beforeEach(() => {
     setTimeout = jest.fn( (func, time) => func() );
     Actions.login = jest.fn();
-    Actions.drawer = jest.fn();
+    Actions.feed = jest.fn();
   });
 
   it('ios: failed credentials, goes to login page', () => {
