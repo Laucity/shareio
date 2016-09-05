@@ -5,17 +5,18 @@ import {
   View
 } from 'react-native';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
 import { Actions } from 'react-native-router-flux';
+
+import ItemNavBar from 'shareio/components/navbar/ItemNavBar';
 
 import Color from 'shareio/lib/Color';
 
-export default class NavBar extends Component {
+export default class Item extends Component {
 
   render() {
     return (
       <View style={styles.container}>
-        <Text>yo</Text>
+        <ItemNavBar title={this.props.title} />
       </View>
     );
   }
@@ -24,7 +25,6 @@ export default class NavBar extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
     flex: 1
   }
 });
