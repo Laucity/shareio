@@ -24,13 +24,13 @@ export default class ItemNavBar extends Component {
     return (
       <View style={styles.container}>
         <Icon
-          ref={'menu'}
+          ref={'back'}
           onPress={this._back.bind(this)}
           name={'chevron-left'}
           size={25}
           color={Color.WHITE}
         />
-        <Text style={styles.logo}>{this.props.title}</Text>
+        <Text ref={'title'} style={styles.logo}>{this.props.title}</Text>
         <Icon name={'comment'} size={22} color={Color.WHITE} />
       </View>
     );
